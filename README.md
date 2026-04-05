@@ -1,4 +1,4 @@
-![Stitch UI design Skill](./assets/readme-hero.svg)
+![Stitch UI design Skill](./assets/readme-hero-anime-v2.svg)
 
 # Stitch UI design Skill
 

@@ -1,0 +1,58 @@
+<svg width="1600" height="560" viewBox="0 0 1600 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stitch UI design Skill hero banner v2">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#160b36"/>
+      <stop offset="48%" stop-color="#2a1a63"/>
+      <stop offset="100%" stop-color="#0f0726"/>
+    </linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff9de2"/>
+      <stop offset="100%" stop-color="#87e8ff"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffc4f0"/>
+      <stop offset="50%" stop-color="#aee8ff"/>
+      <stop offset="100%" stop-color="#d7c6ff"/>
+    </linearGradient>
+    <filter id="g" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="stars" width="90" height="90" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="12" r="1.2" fill="#fff" fill-opacity="0.55"/>
+      <circle cx="55" cy="30" r="1.1" fill="#d8eaff" fill-opacity="0.45"/>
+      <circle cx="74" cy="68" r="1" fill="#ffd8f6" fill-opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="560" fill="url(#bg)"/>
+  <rect width="1600" height="560" fill="url(#stars)"/>
+
+  <circle cx="1325" cy="120" r="120" fill="url(#moon)" opacity="0.82"/>
+  <circle cx="250" cy="140" r="92" fill="#8be9ff" opacity="0.16"/>
+
+  <path d="M0 446 C180 390 355 490 545 438 C742 384 900 489 1092 430 C1282 372 1452 440 1600 406 L1600 560 L0 560 Z" fill="#1a123c"/>
+  <path d="M0 480 C220 430 412 515 640 462 C873 410 1078 504 1320 442 C1460 406 1528 423 1600 410 L1600 560 L0 560 Z" fill="#100a2a"/>
+
+  <g opacity="0.58">
+    <path d="M0 350 L1600 350" stroke="#7f6cff" stroke-width="0.9"/>
+    <path d="M0 372 L1600 372" stroke="#7f6cff" stroke-width="0.8"/>
+    <path d="M0 396 L1600 396" stroke="#7f6cff" stroke-width="0.7"/>
+  </g>
+
+  <g filter="url(#g)">
+    <rect x="92" y="106" width="1416" height="332" rx="30" fill="#130b31" fill-opacity="0.55" stroke="#a88dff" stroke-opacity="0.72" stroke-width="2.2"/>
+  </g>
+
+  <g transform="translate(148,174)">
+    <text x="0" y="0" fill="#e3d7ff" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="28" letter-spacing="4">ANIME STYLE UI WORKFLOW</text>
+    <text x="0" y="106" fill="url(#title)" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="88" font-weight="700">Stitch UI design Skill</text>
+    <text x="0" y="174" fill="#d4ebff" font-family="'Segoe UI', Arial, sans-serif" font-size="34">Purpose: DESIGN.md-based Web UI design and implementation</text>
+  </g>
+
+  <g opacity="0.82">
+    <path d="M1236 228 L1498 228" stroke="#8be9ff" stroke-width="3"/>
+    <path d="M1236 260 L1546 260" stroke="#ff7bc9" stroke-width="2.6"/>
+    <path d="M1236 292 L1462 292" stroke="#cdb8ff" stroke-width="2.2"/>
+  </g>
+</svg>
