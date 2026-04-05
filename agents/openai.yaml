@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stitch UI design"
+  short_description: "Apply DESIGN.md-driven web UI implementation workflows"
+  default_prompt: "Use Stitch UI design to implement this web UI task with consistent tokens, responsive layout, and accessibility checks."
