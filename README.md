@@ -2,35 +2,32 @@
 
 # Stitch UI design Skill
 
-A practical Codex skill for web UI work driven by `DESIGN.md`.
+SKILL镜像维护者: Codex金牌小牛马
 
-This repository builds on the idea behind [awesome-design-md](https://github.com/VoltAgent/awesome-design-md):
-- keep design intent in plain markdown,
-- let coding agents read that intent directly,
-- implement UI with consistent tokens, spacing, typography, and interaction quality.
+一个面向 Web UI 开发的 Codex Skill，基于 `DESIGN.md` 设计约束驱动实现流程，帮助你更稳定地完成页面与组件开发。
 
-## What This Skill Adds
+## 项目定位
 
-Compared with using raw `DESIGN.md` files alone, this skill adds an execution workflow for coding agents:
-- when to use it and when to skip it,
-- how to map `DESIGN.md` into code tokens,
-- how to implement in small, reviewable UI slices,
-- how to validate with visual checks plus repo build/test gates.
-
-## Source Credits and Distilled Notes
-
-This skill is distilled from the original concept and collection in:
+本仓库基于以下来源进行提炼与落地：
 - [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
-- [Google Stitch DESIGN.md docs](https://stitch.withgoogle.com/docs/design-md/overview/)
+- [Google Stitch DESIGN.md 文档](https://stitch.withgoogle.com/docs/design-md/overview/)
 
-Key takeaways:
-1. `DESIGN.md` is the design contract for AI-assisted UI generation.
-2. A consistent token system (color, type, spacing, states) is more important than one-off component styling.
-3. Agent prompts are more stable when the design rules are explicit and centralized.
+核心思路：
+1. 用 `DESIGN.md` 作为设计约束输入。
+2. 让 AI 编码代理直接读取视觉规则并生成一致 UI。
+3. 将“设计规则 -> 代码实现 -> 验证交付”串成可复用流程。
 
-## One-Click Install
+## 这个 Skill 增加了什么
 
-Quick install with Codex `skill-installer` helper:
+相较于仅使用原始 `DESIGN.md`，本 Skill 额外提供：
+- 触发条件与适用边界。
+- 从 `DESIGN.md` 提取设计 token（颜色、排版、间距、状态）的实现方法。
+- 小步迭代的 UI 实施策略，减少大改回归风险。
+- 视觉检查与构建/测试门禁结合的交付方式。
+
+## 一键安装
+
+推荐使用 Codex 内置 `skill-installer`：
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
@@ -39,31 +36,31 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
   --name stitch-ui-design
 ```
 
-Then restart Codex.
+安装后请重启 Codex。
 
-Detailed install options are in [INSTALL.md](./INSTALL.md).
+更多安装方式与排障说明见：[INSTALL.md](./INSTALL.md)
 
-## Usage
+## 使用方式
 
-Typical prompts:
-- "Use Stitch UI design. Read local DESIGN.md and implement this page."
-- "Use Stitch UI design with a Stripe-like style for hero and pricing sections."
-- "Use Stitch UI design to refactor this admin table and form UI without changing API behavior."
+常见提示词示例：
+- “Use Stitch UI design，读取本地 DESIGN.md 并实现当前页面。”
+- “Use Stitch UI design，按 Stripe 风格重构首页 Hero 与定价区块。”
+- “Use Stitch UI design，优化管理后台表格与表单样式，不改接口逻辑。”
 
-If your project has no `DESIGN.md` yet, fetch one preset:
+如果项目中还没有 `DESIGN.md`，可先拉取预设：
 
 ```bash
 ~/.codex/skills/stitch-ui-design/scripts/fetch_design_md.sh stripe .
 ```
 
-## Repository Structure
+## 仓库结构
 
-- `SKILL.md`: core behavior and workflow
-- `agents/openai.yaml`: UI metadata for skill chips/list
-- `scripts/fetch_design_md.sh`: fetch DESIGN.md presets
-- `references/sites.md`: common preset slugs
-- `INSTALL.md`: installation methods and troubleshooting
+- `SKILL.md`：Skill 主流程与行为规则
+- `agents/openai.yaml`：Skill 的 UI 元信息
+- `scripts/fetch_design_md.sh`：拉取 DESIGN.md 预设
+- `references/sites.md`：常用预设站点标识
+- `INSTALL.md`：安装与排障文档
 
 ## License
 
-MIT. See [LICENSE](./LICENSE).
+MIT，详见 [LICENSE](./LICENSE)
