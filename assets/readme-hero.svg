@@ -1,51 +1,61 @@
-<svg width="1600" height="560" viewBox="0 0 1600 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stitch UI design Skill 头图">
+<svg width="1600" height="560" viewBox="0 0 1600 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stitch UI design Skill hero banner">
   <defs>
-    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#090012"/>
-      <stop offset="55%" stop-color="#170028"/>
-      <stop offset="100%" stop-color="#05000d"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0f3a"/>
+      <stop offset="45%" stop-color="#2b1d63"/>
+      <stop offset="100%" stop-color="#110a29"/>
     </linearGradient>
-    <linearGradient id="neonA" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00f7ff"/>
-      <stop offset="100%" stop-color="#ff2bd6"/>
+    <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff79c6" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#8be9fd" stop-opacity="0.2"/>
     </linearGradient>
-    <linearGradient id="neonB" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#7c4dff"/>
-      <stop offset="100%" stop-color="#00e5ff"/>
+    <linearGradient id="titleGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffb3f4"/>
+      <stop offset="50%" stop-color="#9fe7ff"/>
+      <stop offset="100%" stop-color="#cbb7ff"/>
     </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#8b5cf6" stroke-opacity="0.17" stroke-width="1"/>
+    <pattern id="dotStars" width="80" height="80" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="10" r="1.2" fill="#ffffff" fill-opacity="0.55"/>
+      <circle cx="48" cy="26" r="1.3" fill="#cbe7ff" fill-opacity="0.45"/>
+      <circle cx="70" cy="64" r="1" fill="#ffd7fa" fill-opacity="0.5"/>
     </pattern>
   </defs>
 
-  <rect width="1600" height="560" fill="url(#bg1)"/>
-  <rect width="1600" height="560" fill="url(#grid)"/>
+  <rect width="1600" height="560" fill="url(#sky)"/>
+  <rect width="1600" height="560" fill="url(#dotStars)"/>
 
-  <circle cx="1320" cy="140" r="220" fill="#ff2bd6" fill-opacity="0.14"/>
-  <circle cx="260" cy="470" r="210" fill="#00f7ff" fill-opacity="0.14"/>
+  <ellipse cx="1360" cy="120" rx="170" ry="105" fill="url(#sunset)" opacity="0.75"/>
+  <ellipse cx="245" cy="125" rx="130" ry="82" fill="#8be9fd" opacity="0.18"/>
 
-  <path d="M0 460 C300 380 520 520 820 430 C1140 330 1320 470 1600 390 L1600 560 L0 560 Z" fill="#0b1220" fill-opacity="0.72"/>
+  <path d="M0 430 C180 370 320 470 490 430 C710 380 760 460 980 410 C1210 355 1330 455 1600 390 L1600 560 L0 560 Z" fill="#1e153f" opacity="0.95"/>
+  <path d="M0 470 C220 420 380 505 590 455 C810 405 980 500 1220 440 C1380 400 1495 430 1600 410 L1600 560 L0 560 Z" fill="#130c2e" opacity="0.95"/>
 
-  <g filter="url(#glow)">
-    <rect x="84" y="110" width="1432" height="330" rx="26" fill="none" stroke="url(#neonA)" stroke-width="3"/>
-    <rect x="102" y="128" width="1396" height="294" rx="20" fill="none" stroke="url(#neonB)" stroke-opacity="0.65" stroke-width="1.8"/>
+  <g opacity="0.55">
+    <path d="M0 352 L1600 352" stroke="#7f6cff" stroke-width="1"/>
+    <path d="M0 375 L1600 375" stroke="#7f6cff" stroke-width="0.8"/>
+    <path d="M0 399 L1600 399" stroke="#7f6cff" stroke-width="0.7"/>
   </g>
 
-  <g transform="translate(145,190)">
-    <text x="0" y="0" fill="url(#neonA)" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', sans-serif" font-size="88" font-weight="700" letter-spacing="1">Stitch UI design Skill</text>
-    <text x="0" y="82" fill="#d7d3ff" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', sans-serif" font-size="38" opacity="0.96">用途：基于 DESIGN.md 的 Web UI 设计与实现</text>
+  <g filter="url(#softGlow)">
+    <rect x="90" y="105" width="1420" height="330" rx="28" fill="#120b2f" fill-opacity="0.58" stroke="#a693ff" stroke-opacity="0.65" stroke-width="2"/>
   </g>
 
-  <g opacity="0.75">
-    <path d="M1240 225 L1450 225" stroke="#00f7ff" stroke-width="3"/>
-    <path d="M1240 255 L1510 255" stroke="#ff2bd6" stroke-width="2.4"/>
-    <path d="M1240 285 L1420 285" stroke="#7c4dff" stroke-width="2"/>
+  <g transform="translate(145,175)">
+    <text x="0" y="0" fill="#d9cbff" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="28" letter-spacing="4" opacity="0.95">ANIME-INSPIRED UI WORKFLOW</text>
+    <text x="0" y="105" fill="url(#titleGlow)" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="86" font-weight="700">Stitch UI design Skill</text>
+    <text x="0" y="172" fill="#cfe7ff" font-family="'Segoe UI', Arial, sans-serif" font-size="33" opacity="0.95">Purpose: DESIGN.md-driven Web UI design and implementation</text>
+  </g>
+
+  <g opacity="0.82">
+    <path d="M1238 232 L1495 232" stroke="#8be9fd" stroke-width="3"/>
+    <path d="M1238 263 L1540 263" stroke="#ff79c6" stroke-width="2.6"/>
+    <path d="M1238 294 L1460 294" stroke="#cbb7ff" stroke-width="2.1"/>
   </g>
 </svg>
